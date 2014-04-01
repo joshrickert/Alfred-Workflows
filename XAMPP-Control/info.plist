@@ -2,12 +2,64 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>action</key>
-	<false/>
+	<key>bundleid</key>
+	<string></string>
 	<key>category</key>
-	<string>SCRIPTS</string>
-	<key>command</key>
-	<string># Note: You may need to input your ROOT password just once when using this extension.
+	<string>Productivity</string>
+	<key>connections</key>
+	<dict>
+		<key>16039760-F173-4AB8-9C73-DA7401D5DE23</key>
+		<array/>
+		<key>2C99F6F1-EF16-4CF1-9762-5D05A1FFAA4D</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>16039760-F173-4AB8-9C73-DA7401D5DE23</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Josh Rickert</string>
+	<key>description</key>
+	<string>Start/Stop Apache &amp; MySQL &amp; FTP of XAMPP in Alfred.</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>XAMPP-Control</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>xampp</string>
+				<key>subtext</key>
+				<string>Start/Stop Apache &amp; MySQL &amp; FTP of XAMPP in Alfred.</string>
+				<key>text</key>
+				<string>XAMPP-Control</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>2C99F6F1-EF16-4CF1-9762-5D05A1FFAA4D</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string># Note: You may need to input your ROOT password just once when using this extension.
 # To reset your ROOT password just run `xampp root`
 
 # start Start XAMPP (Apache, MySQL and eventually others)
@@ -39,43 +91,39 @@ INPUT=`echo "{query}" | tr A-Z a-z`
 PASS=$(Authenticate.app/Contents/MacOS/Authenticate -get password)
 if [ $PASS = '' ] || [ $INPUT = 'root' ]
 then
-	Authenticate.app/Contents/MacOS/Authenticate
+  Authenticate.app/Contents/MacOS/Authenticate
+  echo "Loaded admin password!"
 else
-	PASS =$(Authenticate.app/Contents/MacOS/Authenticate -get password)
-	echo "Load Admin password successfully!"
-	echo $PASS | sudo -S sh -c "/Applications/XAMPP/xamppfiles/xampp {query}"
+  PASS=$(Authenticate.app/Contents/MacOS/Authenticate -get password)
+  echo $PASS | sudo -S sh -c "/Applications/XAMPP/xamppfiles/xampp {query}"
 fi</string>
-	<key>disabled</key>
-	<false/>
-	<key>escapedollar</key>
-	<false/>
-	<key>escapequery</key>
-	<true/>
-	<key>escapequerybackquotes</key>
-	<true/>
-	<key>escapequerybrackets</key>
-	<true/>
-	<key>escapequeryquotes</key>
-	<true/>
-	<key>escapequerysemicolons</key>
-	<true/>
-	<key>growloutput</key>
-	<true/>
-	<key>growloutputsticky</key>
-	<false/>
-	<key>keyword</key>
-	<string>xampp</string>
-	<key>logging</key>
-	<false/>
-	<key>multifileargs</key>
-	<false/>
-	<key>parameter</key>
-	<integer>3</integer>
-	<key>silent</key>
-	<true/>
-	<key>subtitle</key>
-	<string>Start/Stop Apache &amp; MySQL &amp; FTP of XAMPP in Alfred.</string>
-	<key>title</key>
-	<string>XAMPP-Control</string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>16039760-F173-4AB8-9C73-DA7401D5DE23</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string></string>
+	<key>uidata</key>
+	<dict>
+		<key>16039760-F173-4AB8-9C73-DA7401D5DE23</key>
+		<dict>
+			<key>ypos</key>
+			<real>60</real>
+		</dict>
+		<key>2C99F6F1-EF16-4CF1-9762-5D05A1FFAA4D</key>
+		<dict>
+			<key>ypos</key>
+			<real>60</real>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string></string>
 </dict>
 </plist>
