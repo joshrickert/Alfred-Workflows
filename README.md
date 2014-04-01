@@ -1,8 +1,11 @@
 ![XAMPP Control Logo][1]
 
-**XAMPP-Control** *(v1.1)* - [download here][2]
+# XAMPP-Control
+*(v2.0)* - [Download Here][2]
 
-Start/Stop Apache & MySQL & FTP of XAMPP in Alfred with PowerPack. From now on you will be no longer launch XAMPP in your Dock continually.
+![XAMPP Control Trigger][4]
+
+Start/Stop Apache & MySQL & FTP of XAMPP in Alfred 2 with PowerPack.
 
 *Note:* # Note: You may need to input your admin **ROOT** password just once when using this extension. To reset your **ROOT** password just run `xampp root`
 
@@ -33,12 +36,11 @@ run `xampp {query}` from the command chart below.
 
     fix_rights    Resets file permissions.
 
-
 ![XAMPP Control Screenshot][3]
 
 * * *
 
-Release Notes
+## Release Notes
 
 `v2.0`
 
@@ -51,7 +53,8 @@ Release Notes
 
 [1]: https://raw.githubusercontent.com/joshrickert/Alfred-Workflows/master/XAMPP-Control/icon.png "XAMPP Control for Alfred Logo"
 [2]: https://raw.githubusercontent.com/joshrickert/Alfred-Workflows/master/Downloads/XAMPP-Control.alfredworkflow "XAMPP Control Download Link"
-[3]: https://raw.githubusercontent.com/joshrickert/Alfred-Workflows/master/XAMPP-Control/screenshot.png "XAMPP Control for Alfred Screenshot"
+[3]: https://raw.githubusercontent.com/joshrickert/Alfred-Workflows/master/assets/screenshot.png "XAMPP Control for Alfred Screenshot"
+[4]: https://raw.githubusercontent.com/joshrickert/Alfred-Workflows/master/assets/XAMPP-Control-trigger.png "XAMPP Control for Alfred Trigger"
 
 ## License
 
