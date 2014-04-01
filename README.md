@@ -1,5 +1,3 @@
-![XAMPP Control Logo][1]
-
 # XAMPP-Control
 *(v2.0)* - [Download Here][2]
 
@@ -51,7 +49,6 @@ run `xampp {query}` from the command chart below.
 * Authenticate.app supported & root password auto-saved
 * Extension Updater supported
 
-[1]: https://raw.githubusercontent.com/joshrickert/Alfred-Workflows/master/XAMPP-Control/icon.png "XAMPP Control for Alfred Logo"
 [2]: https://raw.githubusercontent.com/joshrickert/Alfred-Workflows/master/Downloads/XAMPP-Control.alfredworkflow "XAMPP Control Download Link"
 [3]: https://raw.githubusercontent.com/joshrickert/Alfred-Workflows/master/assets/screenshot.png "XAMPP Control for Alfred Screenshot"
 [4]: https://raw.githubusercontent.com/joshrickert/Alfred-Workflows/master/assets/XAMPP-Control-trigger.png "XAMPP Control for Alfred Trigger"
