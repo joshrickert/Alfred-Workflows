@@ -49,9 +49,9 @@ Release Notes
 * Authenticate.app supported & root password auto-saved
 * Extension Updater supported
 
-[1]: https://github.com/joshrickert/Alfred-Extensions/raw/master/XAMPP-Control/icon.png "XAMPP Control for Alfred Logo"
-[2]: https://github.com/joshrickert/Alfred-Extensions/raw/master/Downloads/XAMPP-Control.alfredworkflow "XAMPP Control Download Link"
-[3]: https://github.com/joshrickert/Alfred-Extensions/raw/master/XAMPP-Control/screenshot.png "XAMPP Control for Alfred Screenshot"
+[1]: https://raw.githubusercontent.com/joshrickert/Alfred-Workflows/master/XAMPP-Control/icon.png "XAMPP Control for Alfred Logo"
+[2]: https://raw.githubusercontent.com/joshrickert/Alfred-Workflows/master/Downloads/XAMPP-Control.alfredworkflow "XAMPP Control Download Link"
+[3]: https://raw.githubusercontent.com/joshrickert/Alfred-Workflows/master/XAMPP-Control/screenshot.png "XAMPP Control for Alfred Screenshot"
 
 ## License
 
